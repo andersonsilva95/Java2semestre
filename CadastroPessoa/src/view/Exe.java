@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+
+
 public class Exe extends JFrame {
 	JButton btnCadPF = new JButton("Cadastrar pessoa Física");
 	JButton btnCadPJ = new JButton("Cadastrar pessoa Jurídica");
@@ -20,17 +22,17 @@ public class Exe extends JFrame {
 		
 		btnCadPF.setBounds(100, 100, 100, 100);
 		btnCadPF.addActionListener(new ActionListener(){
-			@Overrider
-			public void actionPerformed(ActionEvent e) {
+			@Override
+			public void actionPerformed(ActionEvent actionEvent) {
 				view.PFisica pf = new view.PFisica();
 			}
 		});
 		pane.add(btnCadPF);
 		
 		btnCadPJ.setBounds(500, 250, 150, 30);
-		btnCadPJ.addActionListener(new PJuridica(){
+		btnCadPJ.addActionListener(new ActionListener(){
 			@Override
-			public void actionPerforme(ActionEvent actionEvent) {
+			public void actionPerformed(ActionEvent actionEvent) {
 				PJuridica pjuri = new PJuridica();
 			}
 		});

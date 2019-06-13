@@ -1,25 +1,49 @@
 package model;
 
 public class PFisicaa {
-	private String nome;
-	private double cpf;
-	private int idade;
+	private String Nome;
+	private double Cpf;
+	private int Idade;
+	private String Endereco;
+	private String Cidade;
+	private long Telefone;
+	
+	
 	public String getNome() {
-		return nome;
+		return Nome;
 	}
 	public void setNome(String nome) {
-		this.nome = nome;
+		Nome = nome;
 	}
 	public double getCpf() {
-		return cpf;
+		return Cpf;
 	}
 	public void setCpf(double cpf) {
-		this.cpf = cpf;
+		Cpf = cpf;
 	}
 	public int getIdade() {
-		return idade;
+		return Idade;
 	}
 	public void setIdade(int idade) {
-		this.idade = idade;
+		Idade = idade;
+	}
+	public String getEndereco() {
+		return Endereco;
+	}
+	public void setEndereco(String endereco) {
+		Endereco = endereco;
+	}
+	public String getCidade() {
+		return Cidade;
+	}
+	public void setCidade(String cidade) {
+		Cidade = cidade;
+	}
+	public long getTelefone() {
+		return Telefone;
+	}
+	public void setTelefone(long telefone) {
+		Telefone = telefone;
+	
 	}
 }

@@ -10,6 +10,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+import model.PFisicaa;
+
 public class PFisica extends JFrame{
 	 JLabel lblNome = new JLabel("Nome: ");
 	    JTextField txtNome = new JTextField();
@@ -72,7 +74,7 @@ public class PFisica extends JFrame{
 	        btnCad.addActionListener(new ActionListener() {
 	            @Override
 	            public void actionPerformed(ActionEvent actionEvent) {
-	                PFisica pessoaf = new PFisica();
+	                PFisicaa pessoaf = new PFisicaa();
 	                pessoaf.setNome(txtNome.getText());
 	                pessoaf.setCpf(Double.parseDouble(txtCpf.getText()));
 	                pessoaf.setIdade(Integer.parseInt(txtIdade.getText()));
