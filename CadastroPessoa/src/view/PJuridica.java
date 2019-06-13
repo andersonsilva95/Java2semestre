@@ -7,7 +7,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+
+import model.PJuridicaa;
+
 
 public class PJuridica extends JFrame{
 
@@ -70,17 +74,17 @@ public class PJuridica extends JFrame{
 	        pane.add(btnLimpar);
 	        btnCad.setBounds(260, 315, 120, 30);
 	        btnCad.addActionListener(new ActionListener() {
-	            @Override
+	        	 @Override
 	            public void actionPerformed(ActionEvent actionEvent) {
-	                PJuridica pj = new PJuridica();
+	                PJuridicaa pj = new PJuridicaa();
 	                pj.setRazaoSocial(txtRzs.getText());
 	                pj.setCnpj(Double.parseDouble(txtCnpj.getText()));
-	                pj.setInscrEstadual(Double.parseDouble(txtIe.getText()));
+	                pj.setInscricaoEstadual(Double.parseDouble(txtIe.getText()));
 	                pj.setEndereco(txtEnd.getText());
 	                pj.setCidade(txtCidade.getText());
 	                pj.setTelefone(Long.parseLong(txtTel.getText()));
 	                JOptionPane.showMessageDialog(null, "Razão Social: " + pj.getRazaoSocial() +
-	                        "\n CNPJ: " + pj.getCnpj() + "\n Inscr. Est.: " + pj.getInscrEstadual() + "\n Endereço: " +
+	                        "\n CNPJ: " + pj.getCnpj() + "\n Inscr. Est.: " + pj.getInscricaoEstadual() + "\n Endereço: " +
 	                        pj.getEndereco() + "\n Cidade: " + pj.getCidade() + "\n Telefone: " + pj.getTelefone());
 	            }
 	        });

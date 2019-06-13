@@ -1,6 +1,6 @@
 package model;
 
-public class PFisica {
+public class PFisicaa {
 	private String nome;
 	private double cpf;
 	private int idade;
