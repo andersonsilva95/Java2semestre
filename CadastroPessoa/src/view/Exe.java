@@ -20,7 +20,7 @@ public class Exe extends JFrame {
 		Container pane = this.getContentPane();
 		pane.setLayout(null);
 		
-		btnCadPF.setBounds(100, 100, 100, 100);
+		btnCadPF.setBounds(100, 100, 200, 50);
 		btnCadPF.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent actionEvent) {
@@ -28,16 +28,18 @@ public class Exe extends JFrame {
 			}
 		});
 		pane.add(btnCadPF);
-		
-		btnCadPJ.setBounds(500, 250, 150, 30);
+		/*Botão de pessoa júridica*/
+		btnCadPJ.setBounds(100, 200, 200, 50);
 		btnCadPJ.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent actionEvent) {
 				PJuridica pjuri = new PJuridica();
 			}
 		});
+		
+		/*tamanho da tela*/
 		pane.add(btnCadPJ);
-			this.setSize(500, 500);
+			this.setSize(400, 300);
 			this.setResizable(false);
 			this.setVisible(true);
 			this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

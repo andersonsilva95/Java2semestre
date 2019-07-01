@@ -6,7 +6,7 @@ public class PJuridicaa {
 	private double InscricaoEstadual;
 	private String Endereco;
 	private String Cidade;
-	private Long Telefone;
+	private long Telefone;
 	
 	public String getRazaoSocial() {
 		return RazaoSocial;
